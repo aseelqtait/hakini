@@ -52,7 +52,7 @@ def test_weak_password(driver, open_signup_page):
     register_page = registerPage(driver)
     register_page.click_MyAcount_page()
     register_page.enter_email("yafaaaq92000@gmail.com")
-    register_page.enter_password("13565")
+    register_page.enter_password("165")
     register_page.click_register_button()
     assert "weak - please enter a stronger password." == register_page.get_the_text_error_message()
 
